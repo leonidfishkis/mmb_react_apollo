@@ -21,13 +21,16 @@ const CreateRaid = () => {
     filePrefix: '',
   });
 
-  const [createRaid] = useMutation(CREATE_RAID_MUTATION, {
+  const [createRaid, { data, error, loading },] = useMutation(CREATE_RAID_MUTATION, {
     variables: {
       name: formState.name,
       timeFrame: formState.timeFrame,
       filePrefix: formState.filePrefix,
     }
   });
+
+  if (loading) return 'Loading...'; 
+  if (error) return `Error! ${error.message}`;
 
   return (
     <div>
