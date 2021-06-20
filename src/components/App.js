@@ -5,6 +5,7 @@ import Header from './Header';
 //import UsersList from './UsersList';
 import RaidsList from './RaidsList';
 import CreateRaid from './CreateRaid';
+import Login from './Login';
 import './../styles/App.css';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={RaidsList} />
           <Route exact path="/create" component={CreateRaid} />
+          <Route exact path="/login" component={Login} />
         </Switch>
       </div>
     </div>
