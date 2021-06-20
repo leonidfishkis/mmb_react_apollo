@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import UsersList from './UsersList';
+//import UsersList from './UsersList';
+import RaidsList from './RaidsList';
+import CreateRaid from './CreateRaid';
 //import logo from './../logo.svg';
 import './../styles/App.css';
 
@@ -28,7 +30,9 @@ import './../styles/App.css';
 
 class App extends Component {
   render() {
-    return <UsersList />;
+//    return <UsersList />;
+//  return <RaidsList />;
+  return <CreateRaid />;
   }
 }
 
